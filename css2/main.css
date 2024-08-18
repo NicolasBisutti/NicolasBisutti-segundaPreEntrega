@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+/* Main */
+.pagPrincipal {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px;
+}
+
+.textoInformativo1 {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.imgPagPrincipal {
+  padding: 35px;
+}
+
+.explicacionTrabajo {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px;
+}
+
+.imgExplicacionTrabajo {
+  padding: 35px;
+}
+
+.redireccion {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px;
+}
+
+.btn-black {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: black;
+  color: white;
+  margin-top: 35px;
+}
+
+.btn:hover {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: white;
+  color: black;
+}
+
+/* Footer */
+.bg-azul {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 1024px) {
+  .pagPrincipal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 150px;
+    align-content: center;
+  }
+}
+/* PROYECTOS  */
+.explicacionProyectos {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 35px;
+  text-align: center;
+}
+
+.mainProyectos {
+  margin: 0px 30px;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 25%);
+  align-content: center;
+  row-gap: 10px;
+}
+
+main div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mainProyectos .img3, .mainProyectos .img4 {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .mainProyectos .img3, .mainProyectos .img4 {
+    display: block;
+  }
+  .mainProyectos {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% 30% 15%;
+  }
+  .mainProyectos .img5, .mainProyectos .img6 {
+    grid-row: span 1;
+  }
+  .mainProyectos .img3, main .img7 {
+    grid-column: span 1;
+  }
+  .mainProyectos .img4 {
+    grid-column: span 2;
+  }
+}
+/* DESARROLLADORES */
+.desarrolladores {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 25%);
+  height: 70vh;
+  border: 2px solid black;
+  padding: 35px;
+  margin: 20px;
+  justify-content: center;
+}
+
+.sujetos {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desarrolladores .img2 {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .desarrolladores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+    align-content: center;
+  }
+}
+/* PERFILES */
+.perfiles {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  border: 2px solid black;
+  padding: 35px;
+  margin: 20px;
+  justify-content: center;
+}
+
+/* COMPRAS */
+.formularioCompra {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  padding: 35px;
+  margin: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 35px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+main h1 {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */
