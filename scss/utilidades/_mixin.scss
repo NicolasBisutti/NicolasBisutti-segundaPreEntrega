@@ -8,3 +8,8 @@
     flex-direction: column;
     align-items: center;
 }
+
+@mixin sombra{
+    background-color:  rgb(236, 232, 232);
+    box-shadow:  5px 2px 2px black;
+}

@@ -18,10 +18,12 @@
     @include flex-column;
     justify-content: space-between;
     padding: $distancia-padding;  
+  
 }
 
 .textoInformativo1{
     @include font;
+    @include sombra;
 }
 
 .imgPagPrincipal{
@@ -34,6 +36,11 @@
     padding: $distancia-padding;
 }
 
+.textoInformativo2{
+    @include font;
+    @include sombra;
+}
+
 .imgExplicacionTrabajo{
     padding: $distancia-padding;
 }
@@ -42,6 +49,11 @@
     @include font;
     @include flex-column;
     padding: $distancia-padding;
+}
+
+.textoRedireccion{
+    @include font;
+    @include sombra;
 }
 
 .btn-black{
@@ -84,6 +96,7 @@
     @include font;
     padding: $distancia-padding;
     text-align: center;
+    @include sombra;
 }
 
 
@@ -143,12 +156,9 @@ main{
 
 .desarrolladores{
     @include font;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 25%);
-    height: 70vh;
+    display: flex;
     border: 2px solid black;
-    padding: $distancia-padding;
+    padding: 60px;
     margin:20px;
     justify-content: center;
 }
@@ -156,21 +166,11 @@ main{
 .sujetos{
     @include font;
     @include flex-column;
+    padding: 20px;
+    @include sombra;
 }
 
-.desarrolladores .img2{
-    display: none;
-}
 
-@media screen and (min-width: 1024px){
-.desarrolladores{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    column-gap: 20px;
-    align-content: center;
-}
-}
 
 
 /* PERFILES */
@@ -198,6 +198,7 @@ main{
 
 .form{
     @include font;
+    @include sombra;
     padding: $distancia-padding;
     margin: 10px;
     align-items: center;
